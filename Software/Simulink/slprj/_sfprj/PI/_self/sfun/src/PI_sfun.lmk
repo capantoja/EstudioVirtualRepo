@@ -1,0 +1,39 @@
+CC     = "E:\Matlab\sys\lcc\bin\lcc.exe"
+LD     = "E:\Matlab\sys\lcc\bin\lcclnk.exe"
+LIBCMD = "E:\Matlab\sys\lcc\bin\lcclib.exe"
+CFLAGS = -c -Zp8 -DMATLAB_MEX_FILE -noregistrylookup
+LDFLAGS = -s -dll -L"E:\Matlab\sys\lcc\lib"
+LIBFLAGS = 
+
+OBJECTS = \
+	"PI_sfun.obj"\
+	"PI_sfun_registry.obj"\
+	"c1_PI.obj"\
+	"c2_PI.obj"\
+	"lccstub.obj"\
+	"E:\Matlab\sys\lcc\mex\lccdef.def"\
+	"E:\Matlab\stateflow\c\debugger\lib\win32\sfc_debuglcc.lib"\
+	"E:\Matlab\stateflow\c\mex\lib\win32\sfc_mexlcc.lib"\
+	"E:\Matlab\extern\lib\win32\lcc\libmex.lib"\
+	"E:\Matlab\extern\lib\win32\lcc\libmx.lib"\
+	"E:\Matlab\extern\lib\win32\lcc\libfixedpoint.lib"\
+	"E:\Matlab\extern\lib\win32\lcc\libut.lib"\
+	"E:\Matlab\extern\lib\win32\lcc\libmwmathutil.lib"\
+	"E:\Matlab\extern\lib\win32\lcc\libemlrt.lib"\
+	"E:\Matlab\extern\lib\win32\lcc\libmwblascompat32.lib"\
+
+INCLUDE_PATH= -I"E:\Matlab\sys\lcc\include"  -I"E:\Matlab\extern\include"  -I"E:\Matlab\simulink\include"  -I"E:\Matlab\stateflow\c\mex\include"  -I"E:\Matlab\stateflow\c\debugger\include" 
+ 
+
+PI_sfun.mexw32 : $(MAKEFILE) $(OBJECTS)
+	$(LD) $(LDFLAGS) -o PI_sfun.mexw32 @PI_sfun.lmko
+PI_sfun.obj :	"PI_sfun.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "PI_sfun.c"
+PI_sfun_registry.obj :	"PI_sfun_registry.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "PI_sfun_registry.c"
+c1_PI.obj :	"c1_PI.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c1_PI.c"
+c2_PI.obj :	"c2_PI.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c2_PI.c"
+lccstub.obj :	"E:\Matlab\sys\lcc\mex\lccstub.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "E:\Matlab\sys\lcc\mex\lccstub.c"

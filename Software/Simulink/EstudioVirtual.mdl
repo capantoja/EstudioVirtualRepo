@@ -1,0 +1,2530 @@
+Model {
+  Name			  "EstudioVirtual"
+  Version		  7.9
+  MdlSubVersion		  0
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.49"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  SavedCharacterEncoding  "windows-1252"
+  PreLoadFcn		  "waijung.modelPreload; % Required for working with Waijung Blockset. Do not remove."
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  DataTypeOverrideAppliesTo "AllNumericTypes"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  CloseFcn		  "waijung.modelClose; % Required for working with Waijung Blockset. Do not remove."
+  Created		  "Sun Jan 11 19:16:46 2015"
+  Creator		  "Lithium"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "Lithium"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Sat Feb 21 15:49:47 2015"
+  RTWModifiedTimeStamp	  346434255
+  ModelVersionFormat	  "1.%<AutoIncrement:49>"
+  ConfigurationManager	  "None"
+  SampleTimeColors	  on
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "all"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  on
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  Object {
+    $PropName		    "DataLoggingOverride"
+    $ObjectID		    1
+    $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
+    model_		    "EstudioVirtual"
+    signals_		    []
+    overrideMode_	    [0.0]
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      "EstudioVirtual"
+      PropName		      "logAsSpecifiedByModels_"
+    }
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      []
+      PropName		      "logAsSpecifiedByModelsSSIDs_"
+    }
+  }
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      2
+      Version		      "1.12.0"
+      Array {
+	Type			"Handle"
+	Dimension		9
+	Simulink.SolverCC {
+	  $ObjectID		  3
+	  Version		  "1.12.0"
+	  StartTime		  "0.0"
+	  StopTime		  "10.0"
+	  AbsTol		  "auto"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "SingleTasking"
+	  EnableConcurrentExecution off
+	  ConcurrentTasks	  off
+	  Solver		  "ode3"
+	  SolverName		  "ode3"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  4
+	  Version		  "1.12.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "ModelDataLogs"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  5
+	  Version		  "1.12.0"
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  UseFloatMulNetSlope	  off
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  2147483647
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode on
+	  LifeSpan		  "1"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	  ParallelExecutionInRapidAccelerator on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  6
+	  Version		  "1.12.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Enable All"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "warning"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnconditionalTransitionShadowingDiag "warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  7
+	  Version		  "1.12.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "LittleEndian"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "ARM Compatible->Cortex - M4"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "LittleEndian"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "ARM Compatible->Cortex - M4"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  8
+	  Version		  "1.12.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  9
+	  Version		  "1.12.0"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  10
+	  Version		  "1.12.0"
+	  SystemTargetFile	  "stm32f4.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  off
+	  TemplateMakefile	  "ert_default_tmf"
+	  Description		  "STM32F4 Target"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ProcessScript		  "stm32f4_make_rtw_hook"
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  GenerateWebview	  off
+	  GenerateCodeMetricsReport off
+	  GenerateCodeReplacementReport	off
+	  RTWCompilerOptimization "Off"
+	  CheckMdlBeforeBuild	  "Off"
+	  CustomRebuildMode	  "OnUpdate"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      11
+	      Version		      "1.12.0"
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses off
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.STFCustomTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      12
+	      Version		      "1.12.0"
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      CodeReplacementLibrary  "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      CodeExecutionProfiling  off
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant off
+	      ParMdlRefBuildCompliant off
+	      CompOptLevelCompliant   off
+	      ConcurrentExecutionCompliant off
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Use local settings"
+	      CombineOutputUpdateFcns on
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    on
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      off
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   off
+	      SupportNonInlinedSFcns  off
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      PortableWordSizes	      off
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      GRTInterface	      off
+	      SystemTargetFile	      "stm32f4.tlc"
+	      DialogCategory	      0
+	      Array {
+		Type			"Handle"
+		Dimension		1
+		Simulink.ERTTargetCC {
+		  $BackupClass		  "Simulink.TargetCC"
+		  $ObjectID		  13
+		  Version		  "1.12.0"
+		  TargetFcnLib		  "ansi_tfl_table_tmw.mat"
+		  TargetLibSuffix	  ""
+		  TargetPreCompLibLocation ""
+		  CodeReplacementLibrary  "ANSI_C"
+		  UtilityFuncGeneration	  "Auto"
+		  ERTMultiwordTypeDef	  "System defined"
+		  CodeExecutionProfiling  off
+		  ERTMultiwordLength	  256
+		  MultiwordLength	  2048
+		  GenerateFullHeader	  on
+		  GenerateSampleERTMain	  off
+		  GenerateTestInterfaces  off
+		  IsPILTarget		  off
+		  ModelReferenceCompliant off
+		  ParMdlRefBuildCompliant off
+		  CompOptLevelCompliant	  off
+		  ConcurrentExecutionCompliant off
+		  IncludeMdlTerminateFcn  on
+		  GeneratePreprocessorConditionals "Use local settings"
+		  CombineOutputUpdateFcns on
+		  CombineSignalStateStructs off
+		  SuppressErrorStatus	  off
+		  ERTFirstTimeCompliant	  off
+		  IncludeFileDelimiter	  "Auto"
+		  ERTCustomFileBanners	  on
+		  SupportAbsoluteTime	  on
+		  LogVarNameModifier	  "rt_"
+		  MatFileLogging	  off
+		  MultiInstanceERTCode	  off
+		  SupportNonFinite	  on
+		  SupportComplex	  on
+		  PurelyIntegerCode	  off
+		  SupportContinuousTime	  off
+		  SupportNonInlinedSFcns  off
+		  SupportVariableSizeSignals off
+		  EnableShiftOperators	  on
+		  ParenthesesLevel	  "Nominal"
+		  PortableWordSizes	  off
+		  ModelStepFunctionPrototypeControlCompliant off
+		  CPPClassGenCompliant	  off
+		  AutosarCompliant	  off
+		  GRTInterface		  off
+		  GenerateErtSFunction	  off
+		  CreateSILPILBlock	  "None"
+		  CodeExecutionProfileVariable "executionProfile"
+		  CodeProfilingSaveOptions "SummaryOnly"
+		  GenerateASAP2		  off
+		  ExtMode		  off
+		  ExtModeTransport	  0
+		  ExtModeStaticAlloc	  off
+		  ExtModeStaticAllocSize  1000000
+		  ExtModeTesting	  off
+		  ExtModeMexFile	  "ext_comm"
+		  ExtModeIntrfLevel	  "Level1"
+		  InlinedParameterPlacement "NonHierarchical"
+		  TargetOS		  "BareBoardExample"
+		  MultiInstanceErrorCode  "Error"
+		  RateGroupingCode	  on
+		  RootIOFormat		  "Individual arguments"
+		  RTWCAPISignals	  off
+		  RTWCAPIParams		  off
+		  RTWCAPIStates		  off
+		  RTWCAPIRootIO		  off
+		  ERTSrcFileBannerTemplate "stm32f4_code_template.cgt"
+		  ERTHdrFileBannerTemplate "stm32f4_code_template.cgt"
+		  ERTDataSrcFileTemplate  "stm32f4_code_template.cgt"
+		  ERTDataHdrFileTemplate  "stm32f4_code_template.cgt"
+		  ERTCustomFileTemplate	  "stm32f4_file_process.tlc"
+		  CoverageDialogOpen	  "off"
+		  EnableDataOwnership	  off
+		  SignalDisplayLevel	  10
+		  ParamTuneLevel	  10
+		  GlobalDataDefinition	  "Auto"
+		  DataDefinitionFile	  "global.c"
+		  GlobalDataReference	  "Auto"
+		  ERTFilePackagingFormat  "Modular"
+		  DataReferenceFile	  "global.h"
+		  PreserveExpressionOrder off
+		  PreserveIfCondition	  off
+		  ConvertIfToSwitch	  off
+		  PreserveExternInFcnDecls on
+		  SuppressUnreachableDefaultCases off
+		  EnableUserReplacementTypes off
+		  Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    double		    ""
+		    single		    ""
+		    int32		    ""
+		    int16		    ""
+		    int8		    ""
+		    uint32		    ""
+		    uint16		    ""
+		    uint8		    ""
+		    boolean		    ""
+		    int			    ""
+		    uint		    ""
+		    char		    ""
+		    }
+		    PropName		    "ReplacementTypes"
+		  }
+		  MemSecPackage		  "--- None ---"
+		  MemSecDataConstants	  "Default"
+		  MemSecDataIO		  "Default"
+		  MemSecDataInternal	  "Default"
+		  MemSecDataParameters	  "Default"
+		  MemSecFuncInitTerm	  "Default"
+		  MemSecFuncExecute	  "Default"
+		  MemSecFuncSharedUtil	  "Default"
+		  CodeProfilingInstrumentation off
+		}
+		PropName		"Components"
+	      }
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	hdlcoderui.hdlcc {
+	  $ObjectID		  14
+	  Version		  "1.12.0"
+	  Description		  "HDL Coder custom configuration component"
+	  Name			  "HDL Coder"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    ""
+	    PropName		    "HDLConfigFile"
+	  }
+	  HDLCActiveTab		  "0"
+	}
+	PropName		"Components"
+      }
+      Name		      "stm32f4_configset"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition     [ 200, 85, 1080, 715 ] 
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    2
+  }
+  ExplicitPartitioning	  off
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      OutputFunctionCall      off
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      S-Function
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+      SFunctionDeploymentMode off
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      SFBlockType	      "NONE"
+      Variant		      off
+      GeneratePreprocessorConditionals off
+    }
+    Block {
+      BlockType		      Terminator
+    }
+  }
+  System {
+    Name		    "EstudioVirtual"
+    Location		    [2, 74, 1261, 739]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "23"
+    Block {
+      BlockType		      S-Function
+      Name		      "Basic PWM1"
+      SID		      "11"
+      Ports		      [4]
+      Position		      [790, 213, 980, 337]
+      FunctionName	      "stm32f4_basicpwm"
+      Parameters	      "timer,pwmperiod,ch1pin,ch2pin,ch3pin,ch4pin,sampletime,sampletimestr,blockid,apb,portstr,pinst"
+      "r,pinmat,timarr,timprescale,chmat,polaritystr"
+      EnableBusSupport	      off
+      MaskType		      "stm32f4_basicpwm"
+      MaskDescription	      "This block implements basic Edge-aligned Pulse Width Modulation (PWM) generation.\nAll ti"
+      "mers are 16-bit. The PWM period is fixed (per timer)."
+      MaskHelp		      "web(fullfile(waijungdocroot,'stm32f4_basicpwm.htm'),'-browser')"
+      MaskPromptString	      "Timer|PWM Period (seconds)|Polarity|Polaritystr|Channel 1|Channel 2|Channel 3|Channel 4|"
+      "Sample time (sec)|Compiled sample time (sec) in string|BlockID|Port pin string|Enable custom port labels|Custom "
+      "input port labels (Ex. In1, In2, In3)|Custom output port labels (Ex. Out1, Out2, Out3)|APB|Port string|Pin strin"
+      "g|Pin matrix|Timer ARR|Timer PRESCALE|Channel order"
+      MaskStyleString	      "popup(1|2|3|4|5|8|9|10|11|12|13|14),edit,popup(Active High|Active Low),edit,popup(Not ava"
+      "ilable - Do not use|E9|A8),popup(Not available - Do not use|E11|A9),popup(Not available - Do not use|E13|A10),po"
+      "pup(Not available - Do not use|E14|A11),edit,edit,edit,edit,checkbox,edit,edit,edit,edit,edit,edit,edit,edit,edi"
+      "t"
+      MaskVariables	      "timer=&1;pwmperiod=@2;polarity=&3;polaritystr=&4;ch1pin=&5;ch2pin=&6;ch3pin=&7;ch4pin=&8;sa"
+      "mpletime=@9;sampletimestr=&10;blockid=&11;portpinstr=&12;enablecustomportlabel=@13;cinputportlabel=&14;coutputpo"
+      "rtlabel=&15;apb=&16;portstr=&17;pinstr=&18;pinmat=@19;timarr=&20;timprescale=&21;chmat=@22;"
+      MaskTunableValueString  "off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off"
+      MaskCallbackString      "stm32f4_basicpwm_callback('timer');|stm32f4_basicpwm_callback('pwmperiod');|stm32f4_bas"
+      "icpwm_callback('polarity');||stm32f4_basicpwm_callback('ch1pin');|stm32f4_basicpwm_callback('ch2pin');|stm32f4_b"
+      "asicpwm_callback('ch3pin');|stm32f4_basicpwm_callback('ch4pin');|stm32f4_basicpwm_callback('sampletime');|stm32f"
+      "4_basicpwm_callback('sampletimestr');|stm32f4_basicpwm_callback('blockid');||stm32f4_basicpwm_callback('enablecu"
+      "stomportlabel');|||||||||"
+      MaskEnableString	      "on,on,on,off,on,on,on,on,on,off,off,on,on,on,on,on,off,off,off,off,off,off"
+      MaskVisibilityString    "on,on,on,off,on,on,on,on,on,off,off,off,on,on,off,off,off,off,off,off,off,off"
+      MaskToolTipString	      "on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on"
+      MaskInitialization      "stm32f4_basicpwm_callback('init');"
+      MaskSelfModifiable      on
+      MaskDisplay	      "text(0.95, 0.5, 'Timer: 1\\nPolarity: Active High\\nPeriod (sec) 0.0001\\nTs (sec): -1','ver'"
+      ",'middle','hor','right');port_label('input', 1,'PWM1 (E9)');port_label('input', 2,'PWM2 (E11)');port_label('inpu"
+      "t', 3,'PWM3 (E13)');port_label('input', 4,'PWM4 (E14)')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "normalized"
+      MaskValueString	      "1|0.0001|Active High|TIM_OCPolarity_High|E9|E11|E13|E14|0.01|-1|BasicPWM1|E9,E11,E13,E14|"
+      "on|PWM1, PWM2, PWM3, PWM4|0|2|[\"E\"]|[\"GPIO_Pin_9 \\| GPIO_Pin_11 \\| GPIO_Pin_13 \\| GPIO_Pin_14\"]|[4 9 11 1"
+      "3 14]|16799|0|[1  2  3  4]"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Digital Input"
+      SID		      "19"
+      Ports		      [0, 3]
+      Position		      [90, 586, 280, 664]
+      LibraryVersion	      "1.48"
+      SourceBlock	      "stm32f4_io_lib/Digital Input"
+      SourceType	      "stm32f4_digital_input"
+      port		      "B"
+      speed		      "100"
+      porttype		      "Pull Up"
+      porttypestr	      "UP"
+      use_pin0		      off
+      use_pin1		      off
+      use_pin2		      off
+      use_pin3		      on
+      use_pin4		      off
+      use_pin5		      off
+      use_pin6		      off
+      use_pin7		      off
+      use_pin8		      off
+      use_pin9		      off
+      use_pin10		      off
+      use_pin11		      off
+      use_pin12		      off
+      use_pin13		      on
+      use_pin14		      on
+      use_pin15		      off
+      pinstr		      "GPIO_Pin_3 | GPIO_Pin_13 | GPIO_Pin_14"
+      usedpinarray	      "[0  0  0  1  0  0  0  0  0  0  0  0  0  1  1  0]"
+      bitbandingstr	      "\n#define DigitalInput_B3 Peripheral_BB(GPIOB->IDR, 3)  /* Output pin */\n#define DigitalIn"
+      "put_B13 Peripheral_BB(GPIOB->IDR, 13)  /* Output pin */\n#define DigitalInput_B14 Peripheral_BB(GPIOB->IDR, 14) "
+      " /* Output pin */"
+      sampletime	      "0.01"
+      sampletimestr	      "-1"
+      blockid		      "DigitalInput"
+      enablecustomportlabel   on
+      glabalinit	      off
+      cinputportlabel	      "In1, In2"
+      coutputportlabel	      "CCW3, CW1, CCW1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Digital Input1"
+      SID		      "20"
+      Ports		      [0, 4]
+      Position		      [90, 696, 280, 774]
+      LibraryVersion	      "1.48"
+      SourceBlock	      "stm32f4_io_lib/Digital Input"
+      SourceType	      "stm32f4_digital_input"
+      port		      "E"
+      speed		      "100"
+      porttype		      "Pull Up"
+      porttypestr	      "UP"
+      use_pin0		      off
+      use_pin1		      off
+      use_pin2		      off
+      use_pin3		      off
+      use_pin4		      off
+      use_pin5		      on
+      use_pin6		      on
+      use_pin7		      on
+      use_pin8		      off
+      use_pin9		      off
+      use_pin10		      off
+      use_pin11		      off
+      use_pin12		      on
+      use_pin13		      off
+      use_pin14		      off
+      use_pin15		      off
+      pinstr		      "GPIO_Pin_5 | GPIO_Pin_6 | GPIO_Pin_7 | GPIO_Pin_12"
+      usedpinarray	      "[0  0  0  0  0  1  1  1  0  0  0  0  1  0  0  0]"
+      bitbandingstr	      "\n#define DigitalInput1_E5 Peripheral_BB(GPIOE->IDR, 5)  /* Output pin */\n#define DigitalI"
+      "nput1_E6 Peripheral_BB(GPIOE->IDR, 6)  /* Output pin */\n#define DigitalInput1_E7 Peripheral_BB(GPIOE->IDR, 7)  "
+      "/* Output pin */\n#define DigitalInput1_E12 Peripheral_BB(GPIOE->IDR, 12)  /* Output pin */"
+      sampletime	      "0.01"
+      sampletimestr	      "-1"
+      blockid		      "DigitalInput1"
+      enablecustomportlabel   on
+      glabalinit	      off
+      cinputportlabel	      "In1, In2"
+      coutputportlabel	      "CCW2, CW2, CCW4, CW4"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Digital Input2"
+      SID		      "21"
+      Ports		      [0, 1]
+      Position		      [90, 481, 280, 559]
+      LibraryVersion	      "1.48"
+      SourceBlock	      "stm32f4_io_lib/Digital Input"
+      SourceType	      "stm32f4_digital_input"
+      port		      "D"
+      speed		      "100"
+      porttype		      "Pull Up"
+      porttypestr	      "UP"
+      use_pin0		      off
+      use_pin1		      off
+      use_pin2		      off
+      use_pin3		      off
+      use_pin4		      off
+      use_pin5		      off
+      use_pin6		      off
+      use_pin7		      off
+      use_pin8		      off
+      use_pin9		      off
+      use_pin10		      off
+      use_pin11		      on
+      use_pin12		      off
+      use_pin13		      off
+      use_pin14		      off
+      use_pin15		      off
+      pinstr		      "GPIO_Pin_11"
+      usedpinarray	      "[0  0  0  0  0  0  0  0  0  0  0  1  0  0  0  0]"
+      bitbandingstr	      "\n#define DigitalInput2_D11 Peripheral_BB(GPIOD->IDR, 11)  /* Output pin */"
+      sampletime	      "0.01"
+      sampletimestr	      "-1"
+      blockid		      "DigitalInput2"
+      enablecustomportlabel   on
+      glabalinit	      off
+      cinputportlabel	      "In1, In2"
+      coutputportlabel	      "CW3"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Digital Output"
+      SID		      "18"
+      Ports		      [4]
+      Position		      [790, 366, 975, 454]
+      LibraryVersion	      "1.48"
+      SourceBlock	      "stm32f4_io_lib/Digital Output"
+      SourceType	      "stm32f4_digital_output"
+      use_bitband	      on
+      port		      "B"
+      speed		      "100"
+      porttype		      "Push Pull"
+      porttypestr	      "PP"
+      use_pin0		      off
+      use_pin1		      off
+      use_pin2		      off
+      use_pin3		      off
+      use_pin4		      on
+      use_pin5		      off
+      use_pin6		      off
+      use_pin7		      on
+      use_pin8		      on
+      use_pin9		      on
+      use_pin10		      off
+      use_pin11		      off
+      use_pin12		      off
+      use_pin13		      off
+      use_pin14		      off
+      use_pin15		      off
+      pinstr		      "GPIO_Pin_4 | GPIO_Pin_7 | GPIO_Pin_8 | GPIO_Pin_9"
+      usedpinarray	      "[0  0  0  0  1  0  0  1  1  1  0  0  0  0  0  0]"
+      bitbandingstr	      "\n#define DigitalOutput_B4 Peripheral_BB(GPIOB->ODR, 4)  /* Output pin */\n#define DigitalO"
+      "utput_B7 Peripheral_BB(GPIOB->ODR, 7)  /* Output pin */\n#define DigitalOutput_B8 Peripheral_BB(GPIOB->ODR, 8)  "
+      "/* Output pin */\n#define DigitalOutput_B9 Peripheral_BB(GPIOB->ODR, 9)  /* Output pin */"
+      sampletime	      "-1"
+      sampletimestr	      "-1"
+      blockid		      "DigitalOutput"
+      enablecustomportlabel   on
+      globalinit	      off
+      cinputportlabel	      "Dir3, Dir1, Dir2, Dir4"
+      coutputportlabel	      "0"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "MATLAB Function"
+      SID		      "17"
+      Ports		      [2, 8]
+      Position		      [385, 209, 535, 461]
+      ZOrder		      -4
+      LibraryVersion	      "1.32"
+      ErrorFcn		      "Stateflow.Translate.translate"
+      PermitHierarchicalResolution "ExplicitOnly"
+      TreatAsAtomicUnit	      on
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      SFBlockType	      "MATLAB Function"
+      MaskType		      "Stateflow"
+      MaskDescription	      "Embedded MATLAB block"
+      MaskSelfModifiable      on
+      MaskDisplay	      "bgColor = Simulink.Root.ColorString2Rgb(get_param(gcbh, 'BackgroundColor')); image(imread('pr"
+      "ivate/eml_membrane_16.png','png','BackgroundColor',bgColor(1:3)),'center'); disp([10 10 'fcn']);"
+      MaskIconFrame	      on
+      MaskIconOpaque	      off
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "normalized"
+      System {
+	Name			"MATLAB Function"
+	Location		[257, 457, 812, 717]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	SIDHighWatermark	"32"
+	Block {
+	  BlockType		  Inport
+	  Name			  "en"
+	  SID			  "17::1"
+	  Position		  [20, 101, 40, 119]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "dato"
+	  SID			  "17::26"
+	  Position		  [20, 136, 40, 154]
+	  ZOrder		  12
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  " Demux "
+	  SID			  "17::20"
+	  Ports			  [1, 1]
+	  Position		  [270, 390, 320, 430]
+	  ZOrder		  6
+	  Outputs		  "1"
+	}
+	Block {
+	  BlockType		  S-Function
+	  Name			  " SFunction "
+	  SID			  "17::19"
+	  Tag			  "Stateflow S-Function EstudioVirtual 2"
+	  Ports			  [2, 9]
+	  Position		  [180, 109, 230, 311]
+	  ZOrder		  5
+	  FunctionName		  "sf_sfun"
+	  PortCounts		  "[2 9]"
+	  EnableBusSupport	  on
+	  Port {
+	    PortNumber		    2
+	    Name		    "pwm1"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    3
+	    Name		    "pwm2"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    4
+	    Name		    "pwm3"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    5
+	    Name		    "pwm4"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    6
+	    Name		    "dir3"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    7
+	    Name		    "dir1"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    8
+	    Name		    "dir2"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    9
+	    Name		    "dir4"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  " Terminator "
+	  SID			  "17::22"
+	  Position		  [460, 401, 480, 419]
+	  ZOrder		  8
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "pwm1"
+	  SID			  "17::5"
+	  Position		  [460, 101, 480, 119]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "pwm2"
+	  SID			  "17::23"
+	  Position		  [460, 136, 480, 154]
+	  ZOrder		  9
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "pwm3"
+	  SID			  "17::24"
+	  Position		  [460, 171, 480, 189]
+	  ZOrder		  10
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "pwm4"
+	  SID			  "17::25"
+	  Position		  [460, 206, 480, 224]
+	  ZOrder		  11
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "dir3"
+	  SID			  "17::31"
+	  Position		  [460, 246, 480, 264]
+	  ZOrder		  17
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "dir1"
+	  SID			  "17::29"
+	  Position		  [460, 281, 480, 299]
+	  ZOrder		  15
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "dir2"
+	  SID			  "17::30"
+	  Position		  [460, 316, 480, 334]
+	  ZOrder		  16
+	  Port			  "7"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "dir4"
+	  SID			  "17::32"
+	  Position		  [460, 351, 480, 369]
+	  ZOrder		  18
+	  Port			  "8"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "en"
+	  SrcPort		  1
+	  DstBlock		  " SFunction "
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "dato"
+	  SrcPort		  1
+	  DstBlock		  " SFunction "
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "pwm1"
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  2
+	  DstBlock		  "pwm1"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "pwm2"
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  3
+	  DstBlock		  "pwm2"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "pwm3"
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  4
+	  DstBlock		  "pwm3"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "pwm4"
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  5
+	  DstBlock		  "pwm4"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "dir3"
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  6
+	  DstBlock		  "dir3"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "dir1"
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  7
+	  DstBlock		  "dir1"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "dir2"
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  8
+	  DstBlock		  "dir2"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "dir4"
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  9
+	  DstBlock		  "dir4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  " Demux "
+	  SrcPort		  1
+	  DstBlock		  " Terminator "
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  " SFunction "
+	  SrcPort		  1
+	  DstBlock		  " Demux "
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "MATLAB Function1"
+      SID		      "22"
+      Ports		      [8, 1]
+      Position		      [385, 500, 535, 810]
+      ZOrder		      -4
+      LibraryVersion	      "1.32"
+      ErrorFcn		      "Stateflow.Translate.translate"
+      PermitHierarchicalResolution "ExplicitOnly"
+      TreatAsAtomicUnit	      on
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      SFBlockType	      "MATLAB Function"
+      MaskType		      "Stateflow"
+      MaskDescription	      "Embedded MATLAB block"
+      MaskSelfModifiable      on
+      MaskDisplay	      "bgColor = Simulink.Root.ColorString2Rgb(get_param(gcbh, 'BackgroundColor')); image(imread('pr"
+      "ivate/eml_membrane_16.png','png','BackgroundColor',bgColor(1:3)),'center'); disp([10 10 'fcn']);"
+      MaskIconFrame	      on
+      MaskIconOpaque	      off
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "normalized"
+      System {
+	Name			"MATLAB Function1"
+	Location		[257, 457, 812, 717]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	SIDHighWatermark	"33"
+	Block {
+	  BlockType		  Inport
+	  Name			  "CW3"
+	  SID			  "22::1"
+	  Position		  [20, 101, 40, 119]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "CCW3"
+	  SID			  "22::23"
+	  Position		  [20, 136, 40, 154]
+	  ZOrder		  9
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "CW1"
+	  SID			  "22::24"
+	  Position		  [20, 171, 40, 189]
+	  ZOrder		  10
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "CCW1"
+	  SID			  "22::25"
+	  Position		  [20, 206, 40, 224]
+	  ZOrder		  11
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "CCW2"
+	  SID			  "22::26"
+	  Position		  [20, 246, 40, 264]
+	  ZOrder		  12
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "CW2"
+	  SID			  "22::27"
+	  Position		  [20, 281, 40, 299]
+	  ZOrder		  13
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "CCW4"
+	  SID			  "22::28"
+	  Position		  [20, 316, 40, 334]
+	  ZOrder		  14
+	  Port			  "7"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "CW4"
+	  SID			  "22::29"
+	  Position		  [20, 351, 40, 369]
+	  ZOrder		  15
+	  Port			  "8"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  " Demux "
+	  SID			  "22::20"
+	  Ports			  [1, 1]
+	  Position		  [270, 315, 320, 355]
+	  ZOrder		  6
+	  Outputs		  "1"
+	}
+	Block {
+	  BlockType		  S-Function
+	  Name			  " SFunction "
+	  SID			  "22::19"
+	  Tag			  "Stateflow S-Function EstudioVirtual 1"
+	  Ports			  [8, 2]
+	  Position		  [180, 111, 230, 314]
+	  ZOrder		  5
+	  FunctionName		  "sf_sfun"
+	  PortCounts		  "[8 2]"
+	  EnableBusSupport	  on
+	  Port {
+	    PortNumber		    2
+	    Name		    "DatoSerial"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  " Terminator "
+	  SID			  "22::22"
+	  Position		  [460, 326, 480, 344]
+	  ZOrder		  8
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "DatoSerial"
+	  SID			  "22::33"
+	  Position		  [460, 101, 480, 119]
+	  ZOrder		  19
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "CW3"
+	  SrcPort		  1
+	  DstBlock		  " SFunction "
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "CCW3"
+	  SrcPort		  1
+	  DstBlock		  " SFunction "
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "CW1"
+	  SrcPort		  1
+	  DstBlock		  " SFunction "
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "CCW1"
+	  SrcPort		  1
+	  DstBlock		  " SFunction "
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "CCW2"
+	  SrcPort		  1
+	  DstBlock		  " SFunction "
+	  DstPort		  5
+	}
+	Line {
+	  SrcBlock		  "CW2"
+	  SrcPort		  1
+	  DstBlock		  " SFunction "
+	  DstPort		  6
+	}
+	Line {
+	  SrcBlock		  "CCW4"
+	  SrcPort		  1
+	  DstBlock		  " SFunction "
+	  DstPort		  7
+	}
+	Line {
+	  SrcBlock		  "CW4"
+	  SrcPort		  1
+	  DstBlock		  " SFunction "
+	  DstPort		  8
+	}
+	Line {
+	  Name			  "DatoSerial"
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  2
+	  DstBlock		  "DatoSerial"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  " Demux "
+	  SrcPort		  1
+	  DstBlock		  " Terminator "
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  " SFunction "
+	  SrcPort		  1
+	  DstBlock		  " Demux "
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Target Setup"
+      SID		      "1"
+      Ports		      []
+      Position		      [340, 15, 578, 137]
+      Priority		      "100"
+      LibraryVersion	      "1.397"
+      SourceBlock	      "stm32f4_device_config_lib/Target Setup"
+      SourceType	      "stm32f4_target_setup"
+      compiler		      "MDK-ARM"
+      previous_compiler	      "MDK-ARM"
+      mcu		      "STM32F407VG (LQFP100); STM32F4DISCOVERY"
+      mcustr		      "STM32F407VG"
+      clockconfig	      "STM32F4DISCOVERY Default (HSEOSC-8MHz/HCLK-168MHz)"
+      system_stm32f4xx_c_path "C:\\Users\\Lithium\\Downloads\\waijung14_12a\\targets\\stm32f4_target\\stm32f4\\utils\\"
+      "STM32F4xx_AN3988_V1.0.1\\stm32f4_default\\hseosc8mhz"
+      showmemoryconfiguration off
+      stacksize		      "0x2000"
+      heapsize		      "0x2000"
+      enableautocompiledownload	on
+      fullchiperase	      off
+      programmerinterface     "ST-Link"
+      editctrlstr	      on
+      compilercontrolstr      "-c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections $(INCLUDES) "
+      assemblercontrolstr     "--cpu Cortex-M4.fp -g --apcs=interwork  --xref $(INCLUDES) "
+      linkercontrolstr	      "--cpu Cortex-M4.fp --strict --scatter \"$(MODELNAME).sct\" --summary_stderr --info summa"
+      "rysizes --map --xref --callgraph --symbols --info sizes --info totals --info unused --info veneers  --list \".\\"
+      "$(MODELNAME).map\" -o $(MODELNAME).axf "
+      runafterdownload	      on
+      execprofile	      "None"
+      profileruart	      "3"
+      profilerbaud	      "500000"
+      profilertxpin	      "D8"
+      profilerinitstr	      "0.01,168000000,1680000,500000,0"
+      manualsetsampletime     off
+      sampletime	      "0.01"
+      blockid		      "TargetSetup"
+      systickreloadvalue      "1680000"
+      hseval		      "8000000"
+      lastprofileruart	      "3"
+      hclk		      "168000000"
+      flashorigin	      "0x08000000"
+      flashlength	      "0x00100000"
+      ramorigin		      "0x20000000"
+      ramlength		      "0x00020000"
+      useextram		      off
+    }
+    Block {
+      BlockType		      S-Function
+      Name		      "UART Rx"
+      SID		      "14"
+      Ports		      [0, 2]
+      Position		      [95, 254, 275, 336]
+      Priority		      "1"
+      FunctionName	      "stm32f4_usart"
+      Parameters	      "configuration,uartmodule,transfer,baudrate,inputtype,outputtype,confstr,binheaderarray,binterm"
+      "inatorarray,asciiheader,asciiterminator,bindatalength,packetmode,varname,sampletime,sampletimestr,blockid"
+      EnableBusSupport	      off
+      MaskType		      "stm32f4_usart"
+      MaskDescription	      "Data type for Ascii format\n%u, %i, %d, %o, %x: uint32\n%e, %g, %f: single\n%c: int8"
+      MaskHelp		      "web(fullfile(waijungdocroot,'stm32f4_usart_rx.htm'), '-browser')"
+      MaskPromptString	      "Configuration|UART Module|Baud rate (bps)|Data bits|Parity|Stop bit|Tx Pin|Rx Pin|Hardwa"
+      "re flow control|HW Flow control, CTS Pin|HW Flow control, RTS Pin|Advance options|Rx buffer size (bytes)|Tx buff"
+      "er size (bytes)|Transfer|Packet mode|Binary header (example: '7E 7E')|Binary terminator (example: '03 03')|Numbe"
+      "r of data port, type DOUBLE|Number of data port, type SINGLE|Number of data port, type INT8|Number of data port,"
+      " type UINT8|Number of data port, type INT16|Number of data port, type UINT16|Number of data port, type INT32|Num"
+      "ber of data port, type UINT32|Ascii format|End of packet|End of packet|Buffer|Var name|Input data type|Output da"
+      "ta type|Binary header|Binary terminator|Binary data length|Ascii header (printf format)|Ascii terminator|Sample "
+      "time (sec)|Compiled sample time (sec) in string|BlockID|Configuration string|Last module selected"
+      MaskStyleString	      "popup(Setup|Tx|Rx),popup(1|2|3|4|5|6),edit,popup(8),popup(No|Odd|Even),popup(0.5|1|1.5|2)"
+      ",popup(Not used|A9|B6),popup(Not used|A10|B7),popup(None|RTS|CTS|RTS/CTS),popup(Not used|A11),popup(Not used|A12"
+      "),checkbox,popup(16|32|64|128|256|512|1024|2048),popup(16|32|64|128|256|512|1024|2048),popup(Blocking|Non-Blocki"
+      "ng),popup(Ascii|Binary|Binary Vector|String Buffer),edit,edit,edit,edit,edit,edit,edit,edit,edit,edit,edit,popup"
+      "(CR (0x0D - \"\\\\\\\\r\")|LF (0x0A - \"\\\\\\\\n\")|CRLF (0x0D 0x0A - \"\\\\\\\\r\\\\\\\\n\")),popup(CR (0x0D -"
+      " \"\\\\\\\\r\")|LF (0x0A - \"\\\\\\\\n\")|CRLF (0x0D 0x0A - \"\\\\\\\\r\\\\\\\\n\")|None),popup(<empty>),edit,ed"
+      "it,edit,edit,edit,edit,edit,edit,edit,edit,edit,edit,edit"
+      MaskVariables	      "configuration=&1;uartmodule=&2;baudrate=@3;databits=@4;parity=&5;stopbit=&6;remaptxpin=&7;r"
+      "emaprxpin=&8;flowcontrol=&9;remapctspin=&10;remaprtspin=&11;advanceoptions=@12;rxbuffersize=@13;txbuffersize=@14"
+      ";transfer=&15;packetmode=&16;binheader=&17;binterminator=&18;porttype_double=@19;porttype_single=@20;porttype_in"
+      "t8=@21;porttype_uint8=@22;porttype_int16=@23;porttype_uint16=@24;porttype_int32=@25;porttype_uint32=@26;asciifor"
+      "mat=@27;rx_asciiterminator=&28;tx_asciiterminator=&29;storagename=&30;varname=&31;inputtype=@32;outputtype=@33;b"
+      "inheaderarray=@34;binterminatorarray=@35;bindatalength=@36;asciiheader=@37;asciiterminator=@38;sampletime=@39;sa"
+      "mpletimestr=&40;blockid=&41;confstr=&42;lastmodule=&43;"
+      MaskTunableValueString  "off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off"
+      ",off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off"
+      MaskCallbackString      "stm32f4_usart_callback('configuration');|stm32f4_usart_callback('uartmodule');|stm32f4_"
+      "usart_callback('baudrate');||||||stm32f4_usart_callback('flowcontrol');|||stm32f4_usart_callback('advanceoptions"
+      "');|||stm32f4_usart_callback('transfer');|stm32f4_usart_callback('packetmode');|stm32f4_usart_callback('binheade"
+      "r');|stm32f4_usart_callback('binterminator');|stm32f4_usart_callback('porttype');|stm32f4_usart_callback('portty"
+      "pe');|stm32f4_usart_callback('porttype');|stm32f4_usart_callback('porttype');|stm32f4_usart_callback('porttype')"
+      ";|stm32f4_usart_callback('porttype');|stm32f4_usart_callback('porttype');|stm32f4_usart_callback('porttype');|st"
+      "m32f4_usart_callback('asciiformat');|stm32f4_usart_callback('rx_asciiterminator');|stm32f4_usart_callback('tx_as"
+      "ciiterminator');|stm32f4_usart_callback('storagename');|stm32f4_usart_callback('varname');||||||||stm32f4_usart_"
+      "callback('sampletime');|stm32f4_usart_callback('sampletimestr');|stm32f4_usart_callback('blockid');||"
+      MaskEnableString	      "on,on,on,on,on,on,on,on,on,off,off,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on"
+      ",on,on,on,on,on,on,on,on,on,on,off,off,on,on"
+      MaskVisibilityString    "off,on,off,off,off,off,off,off,off,off,off,off,off,off,on,on,on,on,on,on,on,on,on,on,on"
+      ",on,off,off,off,off,off,off,off,off,off,off,off,off,on,off,off,off,off"
+      MaskToolTipString	      "on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,"
+      "on,on,on,on,on,on,on,on,on,on,on,on,on,on"
+      MaskInitialization      "stm32f4_usart_callback('init');"
+      MaskSelfModifiable      on
+      MaskDisplay	      "text(0.05, 0.5, 'Module: USART6_Rx\\nPacket: Binary Vector\\nTransfer: Non-Blocking\\nTs (sec"
+      "): -1','ver','middle','hor','left'); port_label('output', 1,'READY'); port_label('output', 2,'int8(3)');"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "normalized"
+      MaskValueString	      "Rx|6|115200|8|No|1|Not used|Not used|None|Not used|Not used|off|512|512|Non-Blocking|Bina"
+      "ry Vector|'S'|'0E'|0|0|3|0|0|0|0|0|'value=%d,%f'|CRLF (0x0D 0x0A - \"\\\\r\\\\n\")|LF (0x0A - \"\\\\n\")|<empty>"
+      "||[0]|[2 3  770]|[2 126  126]|[1 14]|3|'value=%d,%f\\\\r\\\\n'|[2 13 10]|-1|-1|UARTRx|[ \"dummy\", \"0\", \"*\","
+      " \"*\", \"0\", \"*\", \"*\", \"0\", \"*\", \"*\", \"0\", \"*\", \"*\", \"2\", \"5\", \"6\", \"2\", \"5\", \"1\","
+      " \"512\", \"512\", \"2\", \"6\", \"115200\", \"8\", \"No\", \"1\", \"None\", \"USART6\"]|1"
+    }
+    Block {
+      BlockType		      S-Function
+      Name		      "UART Setup"
+      SID		      "15"
+      Ports		      []
+      Position		      [105, 38, 259, 117]
+      Priority		      "1"
+      FunctionName	      "stm32f4_usart"
+      Parameters	      "configuration,uartmodule,transfer,baudrate,inputtype,outputtype,confstr,binheaderarray,binterm"
+      "inatorarray,asciiheader,asciiterminator,bindatalength,packetmode,varname,sampletime,sampletimestr,blockid"
+      EnableBusSupport	      off
+      MaskType		      "stm32f4_usart"
+      MaskDescription	      "Default STM32F4DISCOVERY + aMG F4 Connect 2 + aMG USB Converter N2 settings use\n\nUSART3"
+      ", Tx D8, Rx D9 and USB Serial Converter A."
+      MaskHelp		      "web(fullfile(waijungdocroot,'stm32f4_usart_setup.htm'), '-browser')"
+      MaskPromptString	      "Configuration|UART Module|Baud rate (bps)|Data bits|Parity|Stop bit|Tx Pin|Rx Pin|Hardwa"
+      "re flow control|HW Flow control, CTS Pin|HW Flow control, RTS Pin|Advance options|Rx buffer size (bytes)|Tx buff"
+      "er size (bytes)|Transfer|Packet mode|Binary header (example: '7E 7E')|Binary terminator (example: '03 03')|Numbe"
+      "r of data port, type DOUBLE|Number of data port, type SINGLE|Number of data port, type INT8|Number of data port,"
+      " type UINT8|Number of data port, type INT16|Number of data port, type UINT16|Number of data port, type INT32|Num"
+      "ber of data port, type UINT32|Ascii format|End of packet|End of packet|Buffer|Var name|Input data type|Output da"
+      "ta type|Binary header|Binary terminator|Binary data length|Ascii header (printf format)|Ascii terminator|Sample "
+      "time (sec)|Compiled sample time (sec) in string|BlockID|Configuration string|Last module selected"
+      MaskStyleString	      "popup(Setup|Tx|Rx),popup(1|2|3|4|5|6),edit,popup(8),popup(No|Odd|Even),popup(0.5|1|1.5|2)"
+      ",popup(Not used|C6),popup(Not used|C7),popup(None|RTS|CTS|RTS/CTS),popup(Not used),popup(Not used),checkbox,popu"
+      "p(16|32|64|128|256|512|1024|2048),popup(16|32|64|128|256|512|1024|2048),popup(Blocking|Non-Blocking),popup(Ascii"
+      "|Binary|String Buffer),edit,edit,edit,edit,edit,edit,edit,edit,edit,edit,edit,popup(CR (0x0D - \"\\\\\\\\r\")|LF"
+      " (0x0A - \"\\\\\\\\n\")|CRLF (0x0D 0x0A - \"\\\\\\\\r\\\\\\\\n\")),popup(CR (0x0D - \"\\\\\\\\r\")|LF (0x0A - \""
+      "\\\\\\\\n\")|CRLF (0x0D 0x0A - \"\\\\\\\\r\\\\\\\\n\")|None),popup(<empty>),edit,edit,edit,edit,edit,edit,edit,e"
+      "dit,edit,edit,edit,edit,edit"
+      MaskVariables	      "configuration=&1;uartmodule=&2;baudrate=@3;databits=@4;parity=&5;stopbit=&6;remaptxpin=&7;r"
+      "emaprxpin=&8;flowcontrol=&9;remapctspin=&10;remaprtspin=&11;advanceoptions=@12;rxbuffersize=@13;txbuffersize=@14"
+      ";transfer=&15;packetmode=&16;binheader=&17;binterminator=&18;porttype_double=@19;porttype_single=@20;porttype_in"
+      "t8=@21;porttype_uint8=@22;porttype_int16=@23;porttype_uint16=@24;porttype_int32=@25;porttype_uint32=@26;asciifor"
+      "mat=@27;rx_asciiterminator=&28;tx_asciiterminator=&29;storagename=&30;varname=&31;inputtype=@32;outputtype=@33;b"
+      "inheaderarray=@34;binterminatorarray=@35;bindatalength=@36;asciiheader=@37;asciiterminator=@38;sampletime=@39;sa"
+      "mpletimestr=&40;blockid=&41;confstr=&42;lastmodule=&43;"
+      MaskTunableValueString  "off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off"
+      ",off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off"
+      MaskCallbackString      "stm32f4_usart_callback('configuration');|stm32f4_usart_callback('uartmodule');|stm32f4_"
+      "usart_callback('baudrate');||||||stm32f4_usart_callback('flowcontrol');|||stm32f4_usart_callback('advanceoptions"
+      "');|||stm32f4_usart_callback('transfer');|stm32f4_usart_callback('packetmode');|stm32f4_usart_callback('binheade"
+      "r');|stm32f4_usart_callback('binterminator');|stm32f4_usart_callback('porttype');|stm32f4_usart_callback('portty"
+      "pe');|stm32f4_usart_callback('porttype');|stm32f4_usart_callback('porttype');|stm32f4_usart_callback('porttype')"
+      ";|stm32f4_usart_callback('porttype');|stm32f4_usart_callback('porttype');|stm32f4_usart_callback('porttype');|st"
+      "m32f4_usart_callback('asciiformat');|stm32f4_usart_callback('rx_asciiterminator');|stm32f4_usart_callback('tx_as"
+      "ciiterminator');|stm32f4_usart_callback('storagename');|stm32f4_usart_callback('varname');||||||||stm32f4_usart_"
+      "callback('sampletime');|stm32f4_usart_callback('sampletimestr');|stm32f4_usart_callback('blockid');||"
+      MaskEnableString	      "on,on,on,on,on,on,on,on,on,off,off,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on"
+      ",on,on,on,on,on,on,on,on,on,on,off,off,on,on"
+      MaskVisibilityString    "off,on,on,on,on,on,on,on,on,on,on,on,off,off,off,off,off,off,off,off,off,off,off,off,of"
+      "f,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off"
+      MaskToolTipString	      "on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,"
+      "on,on,on,on,on,on,on,on,on,on,on,on,on,on"
+      MaskInitialization      "stm32f4_usart_callback('init');"
+      MaskSelfModifiable      on
+      MaskDisplay	      "text(0.5, 0.5, 'Module: USART6_Setup\\nBaud (Bps): 9600\\nDMA Buffer: 512/512\\nTx/Rx Pin: C6"
+      "/C7','ver','middle','hor','center');"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "normalized"
+      MaskValueString	      "Setup|6|9600|8|No|1|C6|C7|None|Not used|Not used|off|512|512|Blocking|Ascii|'7E 7E'|'03 0"
+      "3'|1|0|1|0|0|0|0|0|'%d,%f'|CRLF (0x0D 0x0A - \"\\\\r\\\\n\")|CR (0x0D - \"\\\\r\")|<empty>||[0]|[0]|[0]|[0]|0|''"
+      "|[0]|-1|-1|UARTSetup|[ \"dummy\", \"1\", \"C\", \"6\", \"1\", \"C\", \"7\", \"0\", \"*\", \"*\", \"0\", \"*\", \""
+      "*\", \"2\", \"5\", \"6\", \"2\", \"5\", \"1\", \"512\", \"512\", \"2\", \"6\", \"9600\", \"8\", \"No\", \"1\", \""
+      "None\", \"USART6\"]|6"
+    }
+    Block {
+      BlockType		      S-Function
+      Name		      "UART Tx"
+      SID		      "23"
+      Ports		      [1]
+      Position		      [765, 683, 980, 817]
+      Priority		      "1"
+      FunctionName	      "stm32f4_usart"
+      Parameters	      "configuration,uartmodule,transfer,baudrate,inputtype,outputtype,confstr,binheaderarray,binterm"
+      "inatorarray,asciiheader,asciiterminator,bindatalength,packetmode,varname,sampletime,sampletimestr,blockid"
+      EnableBusSupport	      off
+      MaskType		      "stm32f4_usart"
+      MaskDescription	      "Data type for Ascii format\n%u, %i, %d, %o, %x: uint32\n%e, %g, %f: single\n%c: int8"
+      MaskHelp		      "web(fullfile(waijungdocroot,'stm32f4_usart_tx.htm'), '-browser')"
+      MaskPromptString	      "Configuration|UART Module|Baud rate (bps)|Data bits|Parity|Stop bit|Tx Pin|Rx Pin|Hardwa"
+      "re flow control|HW Flow control, CTS Pin|HW Flow control, RTS Pin|Advance options|Rx buffer size (bytes)|Tx buff"
+      "er size (bytes)|Transfer|Packet mode|Binary header (example: '7E 7E')|Binary terminator (example: '03 03')|Numbe"
+      "r of data port, type DOUBLE|Number of data port, type SINGLE|Number of data port, type INT8|Number of data port,"
+      " type UINT8|Number of data port, type INT16|Number of data port, type UINT16|Number of data port, type INT32|Num"
+      "ber of data port, type UINT32|Ascii format|End of packet|End of packet|Buffer|Var name|Input data type|Output da"
+      "ta type|Binary header|Binary terminator|Binary data length|Ascii header (printf format)|Ascii terminator|Sample "
+      "time (sec)|Compiled sample time (sec) in string|BlockID|Configuration string|Last module selected"
+      MaskStyleString	      "popup(Setup|Tx|Rx),popup(1|2|3|4|5|6),edit,popup(8),popup(No|Odd|Even),popup(0.5|1|1.5|2)"
+      ",popup(Not used|A9|B6),popup(Not used|A10|B7),popup(None|RTS|CTS|RTS/CTS),popup(Not used|A11),popup(Not used|A12"
+      "),checkbox,popup(16|32|64|128|256|512|1024|2048),popup(16|32|64|128|256|512|1024|2048),popup(Blocking|Non-Blocki"
+      "ng),popup(Ascii|Binary|Binary Vector|String Buffer),edit,edit,edit,edit,edit,edit,edit,edit,edit,edit,edit,popup"
+      "(CR (0x0D - \"\\\\\\\\r\")|LF (0x0A - \"\\\\\\\\n\")|CRLF (0x0D 0x0A - \"\\\\\\\\r\\\\\\\\n\")),popup(CR (0x0D -"
+      " \"\\\\\\\\r\")|LF (0x0A - \"\\\\\\\\n\")|CRLF (0x0D 0x0A - \"\\\\\\\\r\\\\\\\\n\")|None),popup(<empty>),edit,ed"
+      "it,edit,edit,edit,edit,edit,edit,edit,edit,edit,edit,edit"
+      MaskVariables	      "configuration=&1;uartmodule=&2;baudrate=@3;databits=@4;parity=&5;stopbit=&6;remaptxpin=&7;r"
+      "emaprxpin=&8;flowcontrol=&9;remapctspin=&10;remaprtspin=&11;advanceoptions=@12;rxbuffersize=@13;txbuffersize=@14"
+      ";transfer=&15;packetmode=&16;binheader=&17;binterminator=&18;porttype_double=@19;porttype_single=@20;porttype_in"
+      "t8=@21;porttype_uint8=@22;porttype_int16=@23;porttype_uint16=@24;porttype_int32=@25;porttype_uint32=@26;asciifor"
+      "mat=@27;rx_asciiterminator=&28;tx_asciiterminator=&29;storagename=&30;varname=&31;inputtype=@32;outputtype=@33;b"
+      "inheaderarray=@34;binterminatorarray=@35;bindatalength=@36;asciiheader=@37;asciiterminator=@38;sampletime=@39;sa"
+      "mpletimestr=&40;blockid=&41;confstr=&42;lastmodule=&43;"
+      MaskTunableValueString  "off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off"
+      ",off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off"
+      MaskCallbackString      "stm32f4_usart_callback('configuration');|stm32f4_usart_callback('uartmodule');|stm32f4_"
+      "usart_callback('baudrate');||||||stm32f4_usart_callback('flowcontrol');|||stm32f4_usart_callback('advanceoptions"
+      "');|||stm32f4_usart_callback('transfer');|stm32f4_usart_callback('packetmode');|stm32f4_usart_callback('binheade"
+      "r');|stm32f4_usart_callback('binterminator');|stm32f4_usart_callback('porttype');|stm32f4_usart_callback('portty"
+      "pe');|stm32f4_usart_callback('porttype');|stm32f4_usart_callback('porttype');|stm32f4_usart_callback('porttype')"
+      ";|stm32f4_usart_callback('porttype');|stm32f4_usart_callback('porttype');|stm32f4_usart_callback('porttype');|st"
+      "m32f4_usart_callback('asciiformat');|stm32f4_usart_callback('rx_asciiterminator');|stm32f4_usart_callback('tx_as"
+      "ciiterminator');|stm32f4_usart_callback('storagename');|stm32f4_usart_callback('varname');||||||||stm32f4_usart_"
+      "callback('sampletime');|stm32f4_usart_callback('sampletimestr');|stm32f4_usart_callback('blockid');||"
+      MaskEnableString	      "on,on,on,on,on,on,on,on,on,off,off,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on"
+      ",on,on,on,on,on,on,on,on,on,on,off,off,on,on"
+      MaskVisibilityString    "off,on,off,off,off,off,off,off,off,off,off,off,off,off,on,on,on,on,on,on,on,on,on,on,on"
+      ",on,off,off,off,off,off,off,off,off,off,off,off,off,on,off,off,off,off"
+      MaskToolTipString	      "on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,"
+      "on,on,on,on,on,on,on,on,on,on,on,on,on,on"
+      MaskInitialization      "stm32f4_usart_callback('init');"
+      MaskSelfModifiable      on
+      MaskDisplay	      "text(0.5, 0.5, 'Module: USART6_Tx\\nPacket: Binary Vector\\nTransfer: Non-Blocking\\nTs (sec)"
+      ": -1','ver','middle','hor','center'); port_label('input', 1,'int8(4)');"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "normalized"
+      MaskValueString	      "Tx|6|115200|8|No|1|Not used|Not used|None|Not used|Not used|off|512|512|Non-Blocking|Bina"
+      "ry Vector|'S'|'0E'|0|0|4|0|0|0|0|0|'value=%d,%f'|CRLF (0x0D 0x0A - \"\\\\r\\\\n\")|CRLF (0x0D 0x0A - \"\\\\r\\\\"
+      "n\")|<empty>||[1  1026]|[0]|[1 14]|[1 14]|4|'value=%d,%f\\\\r\\\\n'|[2 13 10]|-1|-1|UARTTx|[ \"dummy\", \"0\", \""
+      "*\", \"*\", \"0\", \"*\", \"*\", \"0\", \"*\", \"*\", \"0\", \"*\", \"*\", \"2\", \"5\", \"6\", \"2\", \"5\", \""
+      "1\", \"512\", \"512\", \"2\", \"6\", \"115200\", \"8\", \"No\", \"1\", \"None\", \"USART6\"]|1"
+    }
+    Line {
+      SrcBlock		      "UART Rx"
+      SrcPort		      1
+      DstBlock		      "MATLAB Function"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "UART Rx"
+      SrcPort		      2
+      Points		      [50, 0; 0, 85]
+      DstBlock		      "MATLAB Function"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "MATLAB Function"
+      SrcPort		      2
+      DstBlock		      "Basic PWM1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "MATLAB Function"
+      SrcPort		      3
+      DstBlock		      "Basic PWM1"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "MATLAB Function"
+      SrcPort		      4
+      DstBlock		      "Basic PWM1"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "MATLAB Function"
+      SrcPort		      1
+      DstBlock		      "Basic PWM1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "MATLAB Function"
+      SrcPort		      5
+      Points		      [115, 0; 0, 30]
+      DstBlock		      "Digital Output"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "MATLAB Function"
+      SrcPort		      6
+      Points		      [105, 0; 0, 20]
+      DstBlock		      "Digital Output"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "MATLAB Function"
+      SrcPort		      8
+      DstBlock		      "Digital Output"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "MATLAB Function"
+      SrcPort		      7
+      Points		      [85, 0; 0, 10]
+      DstBlock		      "Digital Output"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Digital Input2"
+      SrcPort		      1
+      Points		      [85, 0]
+      DstBlock		      "MATLAB Function1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Digital Input"
+      SrcPort		      1
+      Points		      [50, 0; 0, -45]
+      DstBlock		      "MATLAB Function1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Digital Input"
+      SrcPort		      2
+      Points		      [70, 0; 0, -30]
+      DstBlock		      "MATLAB Function1"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Digital Input"
+      SrcPort		      3
+      Points		      [85, 0]
+      DstBlock		      "MATLAB Function1"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "Digital Input1"
+      SrcPort		      1
+      Points		      [50, 0; 0, -30]
+      DstBlock		      "MATLAB Function1"
+      DstPort		      5
+    }
+    Line {
+      SrcBlock		      "Digital Input1"
+      SrcPort		      2
+      Points		      [0, -10]
+      DstBlock		      "MATLAB Function1"
+      DstPort		      6
+    }
+    Line {
+      SrcBlock		      "Digital Input1"
+      SrcPort		      3
+      Points		      [85, 0]
+      DstBlock		      "MATLAB Function1"
+      DstPort		      7
+    }
+    Line {
+      SrcBlock		      "Digital Input1"
+      SrcPort		      4
+      Points		      [50, 0; 0, 30]
+      DstBlock		      "MATLAB Function1"
+      DstPort		      8
+    }
+    Line {
+      SrcBlock		      "MATLAB Function1"
+      SrcPort		      1
+      Points		      [0, 95]
+      DstBlock		      "UART Tx"
+      DstPort		      1
+    }
+  }
+}
+# Finite State Machines
+#
+#    Stateflow Version 7.6 (R2011b) dated Jan 26 2012, 02:07:42
+#
+#
+
+
+Stateflow {
+  machine {
+    id			    1
+    name		    "EstudioVirtual"
+    created		    "19-Jan-2015 16:51:04"
+    isLibrary		    0
+    firstTarget		    31
+    sfVersion		    76014001.00040001
+  }
+  chart {
+    id			    2
+    name		    "MATLAB Function1"
+    windowPosition	    [281.813 354 200.25 189.75]
+    viewLimits		    [0 156.75 0 153.75]
+    screen		    [1 1 1280 800 1.333333333333333]
+    treeNode		    [0 3 0 0]
+    firstTransition	    5
+    firstJunction	    4
+    viewObj		    2
+    machine		    1
+    toolbarMode		    LIBRARY_TOOLBAR
+    ssIdHighWaterMark	    16
+    decomposition	    CLUSTER_CHART
+    type		    EML_CHART
+    firstData		    6
+    chartFileNumber	    1
+    disableImplicitCasting  1
+    eml {
+      name		      "fcn"
+    }
+  }
+  state {
+    id			    3
+    labelString		    "eML_blk_kernel()"
+    position		    [18 64.5 118 66]
+    fontSize		    12
+    chart		    2
+    treeNode		    [2 0 0 0]
+    superState		    SUBCHART
+    subviewer		    2
+    ssIdNumber		    1
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+    eml {
+      isEML		      1
+      script		      "function DatoSerial  = fcn(CW3, CCW3, CW1, CCW1, CCW2, CW2, CCW4, CW4)\n%#codegen\n\ncontador1 = "
+      "int16(0);\nPosicion1 = int16(0);\ncontador2 = int16(0);\nPosicion2 = int16(0);\ncontador3 = int16(0);\nPosicion3"
+      " = int16(0);\ncontador4 = int16(0);\nPosicion4 = int16(0);\nDatoSerial = [0, 0, 0, 0, 0, 0];\n\n%Encoder 1\nif ("
+      "CW1 == 1)\n    contador1 = contador1 + 1;\nend\n\nif (CCW1 == 1)\n    contador1 = contador1 - 1;\nend\n\n%Encode"
+      "r 2\nif (CW2 == 1)\n    contador2 = contador2 + 1;\nend\n\nif (CCW2 == 1)\n    contador2 = contador2 - 1;\nend\n"
+      "\n%Encoder 3\nif (CW3 == 1)\n    contador3 = contador3 + 1;\nend\n\nif (CCW3 == 1)\n    contador3 = contador3 - "
+      "1;\nend\n\n%Encoder 4\nif (CW4 == 1)\n    contador4 = contador4 + 1;\nend\n\nif (CCW4 == 1)\n    contador4 = con"
+      "tador4 - 1;\nend\n\n%127/180 se empaqueta para ser enviado por el puerto serial\nPosicion1 = (360/12000)*contado"
+      "r1*(127/180);\nPosicion2 = (360/15000)*contador1*(127/180);\nPosicion3 = (360/30000)*contador1*(127/180);\nPosic"
+      "ion4 = (360/3150)*contador1*(127/180);\n\n\n%Envio de las posiciones por el puerto serial\nDatoSerial(1) = 'S';\n"
+      "DatoSerial(2) = Posicion1;\nDatoSerial(3) = Posicion2;\nDatoSerial(4) = Posicion3;\nDatoSerial(5) = Posicion4;\n"
+      "DatoSerial(6) = 'E';\n\n\n\n\n\n"
+      editorLayout	      "100 M4x1[10 5 700 500]"
+    }
+  }
+  junction {
+    id			    4
+    position		    [23.5747 49.5747 7]
+    chart		    2
+    linkNode		    [2 0 0]
+    subviewer		    2
+    ssIdNumber		    3
+    type		    CONNECTIVE_JUNCTION
+  }
+  transition {
+    id			    5
+    labelString		    "{eML_blk_kernel();}"
+    labelPosition	    [32.125 19.875 102.544 14.964]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 23.5747 14.625 0 0]
+    }
+    dst {
+      id		      4
+      intersection	      [7 0 -1 -1 23.5747 42.5747 0 0]
+    }
+    midPoint		    [23.5747 24.9468]
+    chart		    2
+    linkNode		    [2 0 0]
+    dataLimits		    [23.575 23.575 14.625 34.575]
+    subviewer		    2
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    2
+  }
+  data {
+    id			    6
+    ssIdNumber		    4
+    name		    "CW3"
+    linkNode		    [2 0 7]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    7
+    ssIdNumber		    6
+    name		    "CCW3"
+    linkNode		    [2 6 8]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    8
+    ssIdNumber		    7
+    name		    "CW1"
+    linkNode		    [2 7 9]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    9
+    ssIdNumber		    8
+    name		    "CCW1"
+    linkNode		    [2 8 10]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    10
+    ssIdNumber		    9
+    name		    "CCW2"
+    linkNode		    [2 9 11]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    11
+    ssIdNumber		    10
+    name		    "CW2"
+    linkNode		    [2 10 12]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    12
+    ssIdNumber		    11
+    name		    "CCW4"
+    linkNode		    [2 11 13]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    13
+    ssIdNumber		    12
+    name		    "CW4"
+    linkNode		    [2 12 14]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    14
+    ssIdNumber		    16
+    name		    "DatoSerial"
+    linkNode		    [2 13 0]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  instance {
+    id			    15
+    name		    "MATLAB Function1"
+    machine		    1
+    chart		    2
+  }
+  chart {
+    id			    16
+    name		    "MATLAB Function"
+    windowPosition	    [281.813 354 200.25 189.75]
+    viewLimits		    [0 156.75 0 153.75]
+    screen		    [1 1 1280 800 1.333333333333333]
+    treeNode		    [0 17 0 0]
+    firstTransition	    19
+    firstJunction	    18
+    viewObj		    16
+    machine		    1
+    toolbarMode		    LIBRARY_TOOLBAR
+    ssIdHighWaterMark	    15
+    decomposition	    CLUSTER_CHART
+    type		    EML_CHART
+    firstData		    20
+    chartFileNumber	    2
+    disableImplicitCasting  1
+    eml {
+      name		      "fcn"
+    }
+  }
+  state {
+    id			    17
+    labelString		    "eML_blk_kernel()"
+    position		    [18 64.5 118 66]
+    fontSize		    12
+    chart		    16
+    treeNode		    [16 0 0 0]
+    superState		    SUBCHART
+    subviewer		    16
+    ssIdNumber		    1
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+    eml {
+      isEML		      1
+      script		      "function [pwm1,pwm2,pwm3,pwm4, dir3, dir1, dir2, dir4]= fcn(en, dato)\n%#codegen\n\npwm1 = uint16"
+      "(0);\npwm2 = uint16(0);\npwm3 = uint16(0);\npwm4 = uint16(0);\n\n\nif (en)\n \n% Control del motor 1    \n  if ("
+      "dato(2) == '1' & dato(2) ~= '0')\n     pwm1 = uint16(50);\n     if (dato(3) == '1')\n         dir1 = uint16(1);\n"
+      "     else\n         dir1 = uint16(0);\n     end\n  else\n      pwm1 = uint16(0);\n  end\n  \n  % Control del mot"
+      "or 2   \n  if (dato(2) == '2' & dato(2) ~= '0')\n     pwm2 = uint16(50);\n     if (dato(3) == '1')\n         dir"
+      "2 = uint16(1);\n     else\n         dir2 = uint16(0);\n     end\n  else\n      pwm2 = uint16(0);\n  end\n  \n  %"
+      " Control del motor 3   \n  if (dato(2) == '3' & dato(2) ~= '0')\n     pwm3 = uint16(50);\n     if (dato(3) == '1"
+      "')\n         dir3 = uint16(1);\n     else\n         dir3 = uint16(0);\n     end\n  else\n      pwm3 = uint16(0);"
+      "\n  end\n  \n  % Control del motor 4   \n  if (dato(2) == '4' & dato(2) ~= '0')\n     pwm4 = uint16(50);\n     i"
+      "f (dato(3) == '1')\n         dir4 = uint16(1);\n     else\n         dir4 = uint16(0);\n     end\n  else\n      p"
+      "wm4 = uint16(0);\n  end\nend\n\n\n  "
+      editorLayout	      "100 M4x1[10 5 700 500]"
+    }
+  }
+  junction {
+    id			    18
+    position		    [23.5747 49.5747 7]
+    chart		    16
+    linkNode		    [16 0 0]
+    subviewer		    16
+    ssIdNumber		    3
+    type		    CONNECTIVE_JUNCTION
+  }
+  transition {
+    id			    19
+    labelString		    "{eML_blk_kernel();}"
+    labelPosition	    [32.125 19.875 102.544 14.964]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 23.5747 14.625 0 0]
+    }
+    dst {
+      id		      18
+      intersection	      [7 0 -1 -1 23.5747 42.5747 0 0]
+    }
+    midPoint		    [23.5747 24.9468]
+    chart		    16
+    linkNode		    [16 0 0]
+    dataLimits		    [23.575 23.575 14.625 34.575]
+    subviewer		    16
+    drawStyle		    SMART
+    executionOrder	    1
+    ssIdNumber		    2
+  }
+  data {
+    id			    20
+    ssIdNumber		    4
+    name		    "en"
+    linkNode		    [16 0 21]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    21
+    ssIdNumber		    5
+    name		    "pwm1"
+    linkNode		    [16 20 22]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    22
+    ssIdNumber		    6
+    name		    "pwm2"
+    linkNode		    [16 21 23]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    23
+    ssIdNumber		    7
+    name		    "pwm3"
+    linkNode		    [16 22 24]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    24
+    ssIdNumber		    8
+    name		    "pwm4"
+    linkNode		    [16 23 25]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    25
+    ssIdNumber		    14
+    name		    "dir3"
+    linkNode		    [16 24 26]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    26
+    ssIdNumber		    9
+    name		    "dato"
+    linkNode		    [16 25 27]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    27
+    ssIdNumber		    12
+    name		    "dir1"
+    linkNode		    [16 26 28]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    28
+    ssIdNumber		    13
+    name		    "dir2"
+    linkNode		    [16 27 29]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    29
+    ssIdNumber		    15
+    name		    "dir4"
+    linkNode		    [16 28 0]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  instance {
+    id			    30
+    name		    "MATLAB Function"
+    machine		    1
+    chart		    16
+  }
+  target {
+    id			    31
+    name		    "sfun"
+    description		    "Default Simulink S-Function Target."
+    machine		    1
+    linkNode		    [1 0 0]
+  }
+}
