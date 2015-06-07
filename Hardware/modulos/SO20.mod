@@ -1,0 +1,161 @@
+PCBNEW-LibModule-V1  17/02/2015 17:35:43
+# encoding utf-8
+Units mm
+$INDEX
+SO-20
+$EndINDEX
+$MODULE SO-20
+Po 0 0 0 15 54E3BCC0 00000000 ~~
+Li SO-20
+Sc 0
+AR 
+Op 0 0 0
+T0 -0.1651 -0.7366 1 1 0 0.15 N V 21 N "SO-20"
+T1 0.3683 1.1938 1 1 0 0.15 N V 21 N "VAL**"
+DC -5.8039 3.175 -5.8293 2.54 0.3 21
+DS -6.5 3.8 6.5 3.8 0.3 21
+DS -6.5 -3.8 6.5 -3.8 0.3 21
+DS -6.5 -3.75 -6.5 3.75 0.3 21
+DS 6.5 -3.75 6.5 3.75 0.3 21
+$PAD
+Sh "1" R 0.7 2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -5.715 5.25
+$EndPAD
+$PAD
+Sh "2" R 0.7 2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -4.445 5.25
+$EndPAD
+$PAD
+Sh "3" R 0.7 2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -3.175 5.25
+$EndPAD
+$PAD
+Sh "4" R 0.7 2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -1.905 5.25
+$EndPAD
+$PAD
+Sh "5" R 0.7 2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -0.635 5.25
+$EndPAD
+$PAD
+Sh "6" R 0.7 2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0.635 5.25
+$EndPAD
+$PAD
+Sh "7" R 0.7 2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 1.905 5.25
+$EndPAD
+$PAD
+Sh "8" R 0.7 2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 3.175 5.25
+$EndPAD
+$PAD
+Sh "9" R 0.7 2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 4.445 5.25
+$EndPAD
+$PAD
+Sh "10" R 0.7 2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 5.715 5.25
+$EndPAD
+$PAD
+Sh "11" R 0.7 2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 5.715 -5.25
+$EndPAD
+$PAD
+Sh "12" R 0.7 2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 4.445 -5.25
+$EndPAD
+$PAD
+Sh "13" R 0.7 2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 3.175 -5.25
+$EndPAD
+$PAD
+Sh "14" R 0.7 2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 1.905 -5.25
+$EndPAD
+$PAD
+Sh "15" R 0.7 2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0.635 -5.25
+$EndPAD
+$PAD
+Sh "16" R 0.7 2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -0.635 -5.25
+$EndPAD
+$PAD
+Sh "17" R 0.7 2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -1.905 -5.25
+$EndPAD
+$PAD
+Sh "18" R 0.7 2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -3.175 -5.25
+$EndPAD
+$PAD
+Sh "19" R 0.7 2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -4.445 -5.25
+$EndPAD
+$PAD
+Sh "20" R 0.7 2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -5.715 -5.25
+$EndPAD
+$EndMODULE SO-20
+$EndLIBRARY

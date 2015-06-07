@@ -1,0 +1,135 @@
+PCBNEW-LibModule-V1  17/02/2015 18:33:00
+# encoding utf-8
+Units mm
+$INDEX
+SO-16N
+$EndINDEX
+$MODULE SO-16N
+Po 0 0 0 15 54E3CFA9 00000000 ~~
+Li SO-16N
+Sc 0
+AR 
+Op 0 0 0
+T0 0.1778 -0.5969 1 1 0 0.15 N V 21 N "SO-16N"
+T1 0.4191 0.7112 1 1 0 0.15 N V 21 N "VAL**"
+DC -5.0038 0.8636 -5.2832 0.508 0.3 21
+DS 5.5 2 5.1 2 0.3 21
+DS 5.5 -2 5.1 -2 0.3 21
+DS -5.5 2 -5.1 2 0.3 21
+DS -5.5 -2 -5.1 -2 0.3 21
+DS -5.5 -2 -5.5 2 0.3 21
+DS 5.5 -2 5.5 2 0.3 21
+$PAD
+Sh "1" R 0.762 2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -4.445 2.54
+$EndPAD
+$PAD
+Sh "2" R 0.762 2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -3.175 2.54
+$EndPAD
+$PAD
+Sh "3" R 0.762 2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -1.905 2.54
+$EndPAD
+$PAD
+Sh "4" R 0.762 2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -0.635 2.54
+$EndPAD
+$PAD
+Sh "5" R 0.762 2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0.635 2.54
+$EndPAD
+$PAD
+Sh "6" R 0.762 2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 1.905 2.54
+$EndPAD
+$PAD
+Sh "7" R 0.762 2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 3.175 2.54
+$EndPAD
+$PAD
+Sh "8" R 0.762 2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 4.445 2.54
+$EndPAD
+$PAD
+Sh "9" R 0.762 2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 4.445 -2.54
+$EndPAD
+$PAD
+Sh "10" R 0.762 2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 3.175 -2.54
+$EndPAD
+$PAD
+Sh "11" R 0.762 2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 1.905 -2.54
+$EndPAD
+$PAD
+Sh "12" R 0.762 2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 0.635 -2.54
+$EndPAD
+$PAD
+Sh "13" R 0.762 2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -0.635 -2.54
+$EndPAD
+$PAD
+Sh "14" R 0.762 2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -1.905 -2.54
+$EndPAD
+$PAD
+Sh "15" R 0.762 2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -3.175 -2.54
+$EndPAD
+$PAD
+Sh "16" R 0.762 2 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -4.445 -2.54
+$EndPAD
+$EndMODULE SO-16N
+$EndLIBRARY

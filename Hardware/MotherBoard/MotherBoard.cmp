@@ -1,0 +1,31 @@
+Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 19/04/2015 15:33:20
+
+BeginCmp
+TimeStamp = /55340C72;
+Reference = P1;
+ValeurCmp = CONN_25X2;
+IdModule  = PINHEADER25X2;
+EndCmp
+
+BeginCmp
+TimeStamp = /55341386;
+Reference = P1A1;
+ValeurCmp = CONN_25X2;
+IdModule  = PINHEADER25X2;
+EndCmp
+
+BeginCmp
+TimeStamp = /55340C81;
+Reference = P2;
+ValeurCmp = CONN_25X2;
+IdModule  = PINHEADER25X2;
+EndCmp
+
+BeginCmp
+TimeStamp = /5534138C;
+Reference = P2A1;
+ValeurCmp = CONN_25X2;
+IdModule  = PINHEADER25X2;
+EndCmp
+
+EndListe

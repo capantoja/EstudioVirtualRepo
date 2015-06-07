@@ -1,0 +1,90 @@
+eeschema (2013-07-07 BZR 4022)-stable  >> Creation date: 03/01/2015 14:07:11
+#Cmp ( order = Reference )
+| C1         10uF        
+| C2         10uF        
+| C3         10uF        
+| C4         10uF        
+| C5         0.1uF       
+| C6         0.1uF       
+| C7         0.1uF       
+| C8         0.1uF       
+| C9         0.1uF       
+| C10        0.1uF       
+| C11        0.1uF       
+| C12        0.1uF       
+| C13        0.1uF       
+| C14        0.1uF       
+| C15        0.1uF       
+| CON1       BARREL_JACK 
+| J1         DB9 FEMALE  
+| K1         PWM1        
+| K2         PWM2        
+| K3         PWM3        
+| K4         PWM4        
+| P1         CONN_25X2   
+| P2         CONN_25X2   
+| P3         ENCODER1    
+| P4         ENCODER2    
+| P5         ENCODER3    
+| P6         ENCODER4    
+| R1         2.2K        
+| R2         2.2K        
+| R3         2.2K        
+| R4         2.2K        
+| R5         2.2K        
+| R6         2.2K        
+| R7         2.2K        
+| R8         2.2K        
+| U1         74HC74M     
+| U2         74HC244M    
+| U3         74HC74M     
+| U4         74HC74M     
+| U5         MAX3232     
+| U6         74HC74M     
+#End Cmp
+
+#Componentes ( orden = Valor )
+| 0.1uF        C5        
+| 0.1uF        C6        
+| 0.1uF        C7        
+| 0.1uF        C8        
+| 0.1uF        C9        
+| 0.1uF        C10       
+| 0.1uF        C11       
+| 0.1uF        C12       
+| 0.1uF        C13       
+| 0.1uF        C14       
+| 0.1uF        C15       
+| 10uF         C1        
+| 10uF         C2        
+| 10uF         C3        
+| 10uF         C4        
+| BARREL_JACK  CON1      
+| DB9 FEMALE   J1        
+| PWM1         K1        
+| PWM2         K2        
+| PWM3         K3        
+| PWM4         K4        
+| CONN_25X2    P1        
+| CONN_25X2    P2        
+| ENCODER1     P3        
+| ENCODER2     P4        
+| ENCODER3     P5        
+| ENCODER4     P6        
+| 2.2K         R1        
+| 2.2K         R2        
+| 2.2K         R3        
+| 2.2K         R4        
+| 2.2K         R5        
+| 2.2K         R6        
+| 2.2K         R7        
+| 2.2K         R8        
+| 74HC74M      U1        
+| 74HC244M     U2        
+| 74HC74M      U3        
+| 74HC74M      U4        
+| MAX3232      U5        
+| 74HC74M      U6        
+#Fin Componentes
+
+#Fin de Lista
